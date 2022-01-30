@@ -3,6 +3,7 @@ import CarCard from "../CarCard/CarCard";
 import CarModal from "../CarModal/CarModal";
 import getCarList from "../../api/carList";
 import Header from "./../Header/Header";
+import Footer from "./../Footer/Footer";
 import "./Home.scss";
 
 function Home() {
@@ -34,7 +35,7 @@ function Home() {
   return (
     <>
       <Header searchText={searchText} setSearchText={setSearchText} />
-      <div className="container py-3">
+      <div className="container py-3 mb-5">
         <h1 className="my-4 page-title">Find your dream car here...</h1>
         {showLoader ? (
           <div className="loader">
@@ -70,6 +71,7 @@ function Home() {
           />
         ) : null}
       </div>
+      <Footer />
     </>
   );
 }
