@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function Header(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-primary">
       <div className="container-fluid">
@@ -30,6 +30,8 @@ function Header() {
               type="search"
               placeholder="Search"
               aria-label="Search"
+              value={props.searchText}
+              onChange={(e) => props.setSearchText(e.target.value)}
             />
           </form>
         </div>
