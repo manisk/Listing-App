@@ -1,6 +1,6 @@
 import React from "react";
 import propType from "prop-types";
-function CarModal({ setSelectedCar, title, desc }) {
+function CarModal({ setSelectedCar, title, desc, img }) {
   return (
     <>
       <div className="modal d-block">
@@ -14,6 +14,7 @@ function CarModal({ setSelectedCar, title, desc }) {
               ></button>
             </div>
             <div className="modal-body">
+              <img className="img-fluid" src={img} alt={title} />
               <p>{desc}</p>
             </div>
             <div className="modal-footer">

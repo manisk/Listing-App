@@ -15,7 +15,11 @@ function CarCard({ img, title, description, price, setSelectedCar }) {
         <div
           className="btn btn-primary"
           onClick={() => {
-            setSelectedCar({ title: title, description: description });
+            setSelectedCar({
+              title: title,
+              description: description,
+              img: img,
+            });
           }}
         >
           Show Detail
