@@ -27,6 +27,7 @@ function Home() {
 
   return (
     <div className="container py-3">
+      <h1 className="my-4 page-title">Find your dream car here...</h1>
       {showLoader ? (
         <div className="loader">
           <img src="https://i.stack.imgur.com/ATB3o.gif" alt="loader.." />

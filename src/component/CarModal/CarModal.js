@@ -3,7 +3,7 @@ import propType from "prop-types";
 function CarModal({ setSelectedCar, title, desc, img }) {
   return (
     <>
-      <div className="modal d-block">
+      <div className="modal d-block pe-none">
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
@@ -22,13 +22,16 @@ function CarModal({ setSelectedCar, title, desc, img }) {
                 className="btn btn-secondary"
                 onClick={() => setSelectedCar(null)}
               >
-                Dissmiss
+                Dismiss
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div className="modal-backdrop show"></div>
+      <div
+        className="modal-backdrop show"
+        onClick={() => setSelectedCar(null)}
+      ></div>
     </>
   );
 }

@@ -2,18 +2,18 @@ import React from "react";
 import propTypes from "prop-types";
 function CarCard({ img, title, description, price, setSelectedCar }) {
   return (
-    <div className="card">
+    <div className="card shadow-sm">
       <img src={img} alt={title} />
       <div className="card-body">
         <div className="d-flex justify-content-between">
           <h5 className="card-title">{title}</h5>
           <h5 className="card-title" style={{ color: "blue" }}>
-            {price}
+            ₹{price}
           </h5>
         </div>
 
         <div
-          className="btn btn-primary"
+          className="btn btn-secondary w-100 mt-3"
           onClick={() => {
             setSelectedCar({
               title: title,
