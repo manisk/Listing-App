@@ -37,5 +37,7 @@ CarCard.propTypes = {
   img: propTypes.string.isRequired,
   title: propTypes.string,
   description: propTypes.string,
+  price: propTypes.number.isRequired,
+  setSelectedCar: propTypes.func.isRequired,
 };
 export default CarCard;

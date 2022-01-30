@@ -37,8 +37,9 @@ function CarModal({ setSelectedCar, title, desc, img }) {
 }
 CarModal.defaultProps = {};
 CarModal.propType = {
-  toggleModal: propType.func.isRequired,
+  setSelectedCar: propType.func.isRequired,
   title: propType.string,
   desc: propType.string,
+  img: propType.string,
 };
 export default CarModal;
