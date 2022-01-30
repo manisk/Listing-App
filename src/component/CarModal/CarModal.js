@@ -23,7 +23,6 @@ function CarModal({ setSelectedCar, title, desc }) {
               >
                 Dissmiss
               </button>
-              <button className="btn btn-primary">Confirm</button>
             </div>
           </div>
         </div>
